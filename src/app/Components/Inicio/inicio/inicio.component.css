@@ -1,0 +1,33 @@
+  .supInf{
+    background-color: #262424;
+    height: 80px;
+    width: 600px;
+
+  }
+  
+  .container {
+    background-color: #001168;
+    color: white;
+    width: 600px;
+    height: 750px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  h1 { 
+    font-family: "Irish Grover";
+    font-size: 60px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; }
+
+    h2 { 
+        font-family: "Irish Grover";
+        font-size: 60px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 26.4px; }
