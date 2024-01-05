@@ -30,4 +30,13 @@
         font-style: normal; 
         font-variant: normal; 
         font-weight: 700; 
-        line-height: 26.4px; }
+        line-height: 26.4px; 
+      }
+
+        .text img {
+          transition: transform 0.3s ease; 
+        }
+        
+        .text img:hover {
+          transform: scale(1.5);
+        }

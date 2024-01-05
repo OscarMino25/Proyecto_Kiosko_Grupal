@@ -1,1 +1,52 @@
-<p>carrete works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Irish+Grover" />
+  <title>AutoLujos Piston</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="supInf1"> </div>
+    <div class="poster">
+      <img src="../../../../assets/Imagenes/AUTOS.png" alt="Autos">
+      <div class="text">
+        <h1>AUTOLUJOS PISTON</h1>
+      </div>
+      <div class="filtro">
+            <form action="enviar" method="post">
+                <div class="form-group">
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca">
+                </div>
+                <div class="form-group">
+                <label for="año">Año:</label>
+                <input type="number" id="año" name="año">
+                </div>
+                <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo">
+                </div>
+                <div class="form-group">
+                <label for="producto">Producto:</label>
+                <input type="text" id="producto" name="producto">
+                </div>
+          </form>
+      </div><br><br>
+      <div class="productos">
+        <div class="producto"><img src="../../../../assets/Imagenes/volante.png" alt="volante"><figcaption>Volante deportivo</figcaption></div> 
+        <div class="producto"><img src="../../../../assets/Imagenes/volante2.png" alt="volante"><figcaption>Volante rally</figcaption></div>
+        <div class="producto"><img src="../../../../assets/Imagenes/volante3.png" alt="volante"><figcaption>Volante clasico</figcaption></div>
+        <div class="producto"><img src="../../../../assets/Imagenes/volante6.png" alt="volante"><figcaption>Volante ergonomico</figcaption></div>
+      </div>
+    </div>
+    <div class="atras">
+        <a  (click)="navegar2()"><img src="../../../../assets/Imagenes/atras.png" alt="atras"></a>
+    </div>
+  </div>  
+  <div class="supInf"> </div>
+
+</body>
+</html>

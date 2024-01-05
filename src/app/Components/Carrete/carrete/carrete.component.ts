@@ -19,6 +19,11 @@ navegar(){
 
 }
 
+navegar2(){
+  this.router.navigate(['/categorias']);
+
+}
+
 
 
 }

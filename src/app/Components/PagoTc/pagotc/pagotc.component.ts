@@ -18,6 +18,11 @@ navegar(){
 
 }
 
+navegar2(){
+  this.router.navigate(['/tipopago']);
+
+}
+
 
 
 }

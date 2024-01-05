@@ -14,7 +14,7 @@ ngOnInit(){
 }
 
 navegar(){
-  this.router.navigate(['/tipopago']);
+  this.router.navigate(['/pagotc']);
 
 }
 
