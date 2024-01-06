@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Irish+Grover" />
-  <title>AutoLujos Piston</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Irish+Grover" />
+    <title>AutoLujos Piston</title>
 </head>
+
 <body>
 
-  <div class="container">
-    <div class="supInf1"> </div>
-    <div class="poster">
-      <img src="../../../../assets/Imagenes/AUTOS.png" alt="Autos">
-      <div class="text">
-        <h1>AUTOLUJOS PISTON</h1>
-      </div>
-      
-      
+    <div class="container">
+        <div class="supInf1"> </div>
+        <div class="poster">
+            <img src="../../../../assets/Imagenes/AUTOS.png" alt="Autos">
+            <div class="text">
+                <h1>AUTOLUJOS PISTON</h1>
+            </div>
+            <div class="mensajes">
+                <div class="mensaje">Por favor ingrese un numero celular mediante el cual se enviara su ticket de compra para el retiro en ventanilla</div>
+                <input #numeroCelularInput type="number" name="numero_celular" placeholder="09XXXXXXX" (focus)="onFocus()" (blur)="onBlur()">
+                <div *ngIf="mostrarTecladoVirtual">
+                    <div class="teclado" #tecladoVirtual>
+                        <button type="button" (click)="agregarNumero('1')">1</button>
+                        <button type="button" (click)="agregarNumero('2')">2</button>
+                        <button type="button" (click)="agregarNumero('3')">3</button>
+                        <button type="button" (click)="agregarNumero('4')">4</button>
+                        <button type="button" (click)="agregarNumero('5')">5</button>
+                        <button type="button" (click)="agregarNumero('6')">6</button>
+                        <button type="button" (click)="agregarNumero('7')">7</button>
+                        <button type="button" (click)="agregarNumero('8')">8</button>
+                        <button type="button" (click)="agregarNumero('9')">9</button>
+                        <button type="button" (click)="agregarNumero('0')">0</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="atras">
+            <a (click)="navegar2()"><img src="../../../../assets/Imagenes/atras.png" alt="atras"></a>
+        </div>
+        <a (click)="navegar()"><button class="btn">Aceptar</button></a>
     </div>
-    <div class="atras">
-        <a  (click)="navegar()"><img src="../../../../assets/Imagenes/atras.png" alt="atras"></a>
-    </div>
-  </div>  
-  <div class="supInf"> </div>
+    <div class="supInf"> </div>
 
 </body>
+
 </html>

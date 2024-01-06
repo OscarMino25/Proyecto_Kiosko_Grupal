@@ -14,10 +14,14 @@ ngOnInit(){
 }
 
 navegar(){
-  this.router.navigate(['/cierre']);
+  this.router.navigate(['/inicio']);
 
 }
 
+navegar2(){
+  this.router.navigate(['/codigo']);
+
+}
 
 
 }
